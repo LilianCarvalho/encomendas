@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../scr/styles/styles.css">
+    <link rel="shortcut icon" href="../scr/assets/favicon.png" type="image/x-icon"> 
+    <script type="module" src="../scr/script/index.js"></script> 
+    <title>Consulta Encomendas</title>
+</head>
+
+<body>
+    <main  class="content">
+        <header class="container-main">
+            <img src="../scr/assets/logo.png" alt="Logo Consulta Encomendas">
+        </header>    
+        <h1>Consulte sua encomenda</h1>
+        <form id="formulario" class="search">
+            <input id="codigo" type="text" placeholder="Digite o número do pedido" />
+            <button type="submit" oncanplay="verificar()">
+                <img src="../scr/assets/lupa.png" alt="Botão pesquisar" />
+            </button>
+        </form>
+    </main>
+
+    <section class="dashboard">       
+        <div id="container">
+            <div class="cards">                
+                <h2>Número de ordem do cliente</h2>
+                <p><span id="numero-ordem"></span> - 
+                    <span id="nome-cliente"></span>
+                </p>
+            </div>
+            <div class="cards" id="valor-pedido">                 
+                <h2>Valor do pedido</h2>
+                <p id="valor"></p>
+            </div>
+            <div class="cards" >                
+                <h2>Data do pedido</h2>
+                <p id="data-pedido"></p>
+            </div>
+            <div class="cards" >                
+                <h2>Situação da encomenda</h2>
+                <p id="status-entrega"></p>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
